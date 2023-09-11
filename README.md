@@ -158,3 +158,117 @@ Métodos --> Acciones que puede realizar mi objeto
 
 def __init__(self): --> Método de mi objeto
 self --> Se guarda la referencia al objeto que se está creando.
+
+
+------------------------------------------------------------------------------------------------------------------
+Udemy
+------------------------------------------------------------------------------------------------------------------
+
+Lista --> Mutables, pueden cambiar su valor []
+conjuntos {} --> manejan clave-valor
+
+Funciones pre-fabricadas -- más usadas
+len()
+max()
+min()
+type()
+round(2.3333,1) --> 2.3
+range(1,10,2) --> Ej:
+    for i in range(1, 10, 2):
+        print(i)
+    //1
+    //3
+    //5
+    //7
+    //9
+
+Crear funciones con python
+---------------------------------------
+
+def funtion(<params>):
+    <code>
+    return <data>
+
+def sumar_numeros(a, b):
+    resultado = a + b
+    return resultado
+
+modulos en python
+---------------------------------------
+
+import os --> mod del sistema
+modulo_os.py
+
+Pandas
+---------------------------------------
+- Herramienta para hacer análisis de datos en Python
+- limpieza de datos
+- trasnformación de data compleja
+- compatibilidad multiplataforma
+- visualización de los datos
+
+Arrays -->
+    Lista 1D -- 1 Dimensión - Series
+    Lista 2D -- DataFrame - Array de 2 Dimensiones
+
+Dataframe -- Hace referencia a una hoja de calculo
+    - series/al tener dos dimensiones tendrán filas/columnas
+    - Los titulos se conocen como features
+    - los valores se conocen como observaciones
+
+Excel vs Pandas
+Worksheet - Dataframe
+Column - Series
+Row headind(id) - Index
+Row - Row
+Empty Cell - NaN
+
+Creando un Dataframe
+--------------------------------
+1. Arrays
+    Numpy Array
+    np.array([1,4],[2,5],[3,6])
+
+    List Arrays
+    data = [[1,4],[2,5],[3,6]]
+
+2. Diccionario
+my_dict = {'key1':value1, 'key2':value2}
+    key => column_name
+    value => data
+    Series(1D array)
+
+3. Dataframe desde csv
+
+
+Atributos - Métodos - Funciones
+--------------------------------
+Atributos: Valor asociado con un objeto -- df.columns
+Función: Grupo de setencias reacionadas que hacen una tarea específica
+    - max()
+    - min()
+    - len()
+Métodos: una función que es definida dentro del cuerpo de una clase
+    - df.head()
+#obteniendo valores estadísticos del dataFrame
+print(df_exams.describe())
+       math score  reading score  writing score
+count  1000.00000    1000.000000    1000.000000
+mean     66.08900      69.169000      68.054000
+std      15.16308      14.600192      15.195657
+min       0.00000      17.000000      10.000000
+25%      57.00000      59.000000      57.750000
+50%      66.00000      70.000000      69.000000
+75%      77.00000      79.000000      79.000000
+max     100.00000     100.000000     100.000000
+
+std --> Desviciación estándar --
+Es una medida del grado de disperción de los datos respecto al valor promedio.
+- mientras más separados se encuentran los datos tendrá una desviación estandar mayor
+- significa que con base al valor promedio, se mueve sobre la recta hacia la izquierda y derecha el valor de la desviación y la mayoría de los datos se encuentran dentro de ese rango.
+
+-----s-----11-----s-------
+entre s y s --> se encuentran la mayoría de los datos, estos con una muestra con valores típicos
+
+25% - 50% - 75% --- Percentiles ---
+Medida de posición que divide la distribución de datos en partes iguales hasta su 100%
